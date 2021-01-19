@@ -1,12 +1,11 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
-
 import scrapy
 
 
-class LucratItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class Article(scrapy.Item):
+    title = scrapy.Field()  # title of the article
+    link = scrapy.Field()  # link to the article
+    category = scrapy.Field()  # category the article is under
+    date = scrapy.Field()  # date of posting, yy/mm/dd
+    author = scrapy.Field()  # author of the article
+    tags = scrapy.Field()  # all extra tags, sometimes empty
+    content = scrapy.Field()  # the body of the article
