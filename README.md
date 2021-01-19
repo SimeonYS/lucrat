@@ -1,0 +1,1 @@
+"lucrat.net/blog" 
